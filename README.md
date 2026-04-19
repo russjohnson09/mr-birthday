@@ -27,3 +27,25 @@ https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Birthday_cake_for_Alis
 
 ## python-scripts
 https://bitmidi.com/frere-jacques-mid
+
+
+
+# Java SDK Path
+https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_android.html
+https://adoptium.net/temurin/releases/?variant=openjdk17&version=17&os=any&arch=any
+
+C:\Program Files\Eclipse Adoptium\jdk-17.0.18.8-hotspot\
+
+
+https://forum.godotengine.org/t/android-export-a-valid-java-sdk-path-is-required-in-editor-setting/72506/2
+
+
+# Android SDK
+C:\Users\russj\AppData\Local\Android\Sdk
+
+
+
+# Portrait
+
+
+https://forum.godotengine.org/t/portrait-screen/9182/2

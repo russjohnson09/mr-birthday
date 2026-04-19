@@ -13,7 +13,11 @@ config_version=5
 config/name="mr-birthday"
 run/main_scene="uid://k2hsh7cqqcld"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="uid://cnpmsjt6iqvoh"
+
+[display]
+
+window/handheld/orientation=1
 
 [physics]
 
@@ -24,3 +28,4 @@ config/icon="res://icon.svg"
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
