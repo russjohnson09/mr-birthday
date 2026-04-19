@@ -1,4 +1,5 @@
 # from midi2audio import FluidSynth
+from moviepy import VideoFileClip, TextClip, CompositeVideoClip, AudioFileClip
 
 from lib.midi2audio import FluidSynth
 
@@ -29,8 +30,18 @@ def main():
         sound_font=sound_font,
         gain=1.0
     )
-    fs.midi_to_audio('frere-jacques.mid', '../assets/frere-jacques.wav')
+    fs.midi_to_audio('frere-jacques.mid', 'frere-jacques.wav')
     # FluidSynth().midi_to_audio('frere-jacques.mid', 'frere-jacques.mp3')
+    audio = AudioFileClip('frere-jacques.wav')
+    audio_clip = audio.subclipped(0.0, 17.447)
+
+    audio_clip.write_audiofile('../godot/assets/frere-jacques-clip.wav')
+
+    audio = AudioFileClip('../godot/assets/Mr birthday2.m4a')
+    audio_clip = audio
+    # audio_clip = audio.subclipped(0.0, 17.447)
+
+    audio.write_audiofile('../godot/assets/mr-birthday.wav')
 
 
 

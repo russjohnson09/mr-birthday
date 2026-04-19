@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://k2hsh7cqqcld"]
+
+[ext_resource type="AudioStream" uid="uid://dy1rswbgq6t3t" path="res://assets/frere-jacques-clip.wav" id="1_vvh5c"]
+[ext_resource type="Texture2D" uid="uid://c8kgruj4ih3b0" path="res://assets/Birthday_cake_for_Alison.jpg" id="2_28aoi"]
+[ext_resource type="Texture2D" uid="uid://b45d8f4kaa3aw" path="res://assets/birthday-candles.svg" id="3_jnlp7"]
+[ext_resource type="AudioStream" uid="uid://dlnxqge6s4364" path="res://assets/mr-birthday-vocals.mp3" id="4_28aoi"]
+
+[node name="Node2D" type="Node2D" unique_id=12024905]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1517005188]
+stream = ExtResource("1_vvh5c")
+autoplay = true
+
+[node name="BirthdayCakeForAlison" type="Sprite2D" parent="." unique_id=1002191608]
+position = Vector2(445, 344.99997)
+scale = Vector2(1.0148437, 0.66060966)
+texture = ExtResource("2_28aoi")
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1726218968]
+offset_left = 278.0
+offset_top = 398.0
+offset_right = 632.0
+offset_bottom = 508.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=412977715]
+modulate = Color(0.14804712, 0.51768476, 0.58232015, 1)
+offset_left = 311.0
+offset_top = 393.0
+offset_right = 1234.0
+offset_bottom = 666.0337
+scale = Vector2(0.565, 0.565)
+theme_override_font_sizes/normal_font_size = 130
+text = "Parker"
+
+[node name="BirthdayCandles" type="Sprite2D" parent="." unique_id=1405555034]
+position = Vector2(447, 128)
+scale = Vector2(0.23279163, 0.23279163)
+texture = ExtResource("3_jnlp7")
+region_enabled = true
+region_rect = Rect2(1549, 748, 523, 789)
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." unique_id=661492137]
+stream = ExtResource("4_28aoi")
+autoplay = true
