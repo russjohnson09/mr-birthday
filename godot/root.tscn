@@ -1,11 +1,19 @@
 [gd_scene format=3 uid="uid://k2hsh7cqqcld"]
 
+[ext_resource type="Texture2D" uid="uid://dmfw8qbq5lvc7" path="res://assets/calendar-2026standarddg-raopenclipart.svg" id="1_jnlp7"]
+[ext_resource type="Script" uid="uid://d2cdufmerhul8" path="res://root.gd" id="1_l8v81"]
 [ext_resource type="AudioStream" uid="uid://dy1rswbgq6t3t" path="res://assets/frere-jacques-clip.wav" id="1_vvh5c"]
 [ext_resource type="Texture2D" uid="uid://c8kgruj4ih3b0" path="res://assets/Birthday_cake_for_Alison.jpg" id="2_28aoi"]
 [ext_resource type="Texture2D" uid="uid://b45d8f4kaa3aw" path="res://assets/birthday-candles.svg" id="3_jnlp7"]
 [ext_resource type="AudioStream" uid="uid://dlnxqge6s4364" path="res://assets/mr-birthday-vocals.mp3" id="4_28aoi"]
 
 [node name="Node2D" type="Node2D" unique_id=12024905]
+script = ExtResource("1_l8v81")
+
+[node name="Calendar2026StandarddgRaopenclipart" type="Sprite2D" parent="." unique_id=1211886408]
+position = Vector2(943.9686, 1426.8125)
+scale = Vector2(0.9729492, 2.2424805)
+texture = ExtResource("1_jnlp7")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1517005188]
 stream = ExtResource("1_vvh5c")
@@ -43,3 +51,10 @@ region_rect = Rect2(1549, 748, 523, 789)
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="." unique_id=661492137]
 stream = ExtResource("4_28aoi")
 autoplay = true
+
+[node name="Timer" type="Timer" parent="." unique_id=426037316]
+wait_time = 30.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
